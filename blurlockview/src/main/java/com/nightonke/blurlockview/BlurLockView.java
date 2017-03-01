@@ -77,6 +77,9 @@ public class BlurLockView extends FrameLayout
      * Init.
      */
     private void init() {
+        if (isInEditMode()) {
+          return;
+        }
         // number password
         LayoutInflater.from(getContext()).inflate(R.layout.number_blur_lock_view, this, true);
 
