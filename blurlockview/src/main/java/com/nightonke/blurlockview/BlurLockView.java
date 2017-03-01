@@ -247,6 +247,7 @@ public class BlurLockView extends FrameLayout
                 }
             }
         });
+        setType(type, false);
     }
 
     /**
